@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #b6df9f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    font-size: 25px;
+    text-align: center;
+    list-style-type: none;
+    background-color: #60a803;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .card1 {
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    width: 200px; /* Ancho de cada carta */
+    height: 300px; /* Alto de cada carta */
+    margin: 10px; /* Margen entre las cartas */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #b2e97e;
+    /*font-size: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #9bd1a7;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    margin: 0;
+    padding-left: 5px;
+    border-radius: 15px;*/
+  }
+button :hover{
+  cursor: pointer;
+    font-family: Arial, sans-serif;
+}
