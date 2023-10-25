@@ -6,7 +6,7 @@ body {
   
   header {
     background-color: #b6df9f;
-    color: #fff;
+    color: #222020;
     text-align: center;
     padding: 20px;
   }
@@ -71,7 +71,7 @@ article {
     margin: 10px;
     background-color: #333;
     transition: transform 0.3s;
-    /margin-left: 5%;/
+    margin-left: 5%;
     color: white;
     font-family: Verdana;
     font-size: 15px;
@@ -244,3 +244,22 @@ iframe {
 }
 
 /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
+
+/* LOGO */
+
+.logo {
+    margin-right: 20px; /* Espacio entre el logo y el título */
+    
+}
+
+.logo img {
+    transition: transform 0.3s;; /* Duración de la transición y propiedad a animar */
+}
+
+.logo img:hover {
+    transform: scale(1.2); /* Opacidad reducida */
+}
+
+h1 {
+    font-size: 24px; /* Tamaño del título */
+}
