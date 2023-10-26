@@ -5,7 +5,7 @@ body {
   }
   
   header {
-    background-color: #b6df9f;
+    background-color: #567a40;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -17,7 +17,7 @@ body {
     list-style-type: none;
     background-color: #60a803;
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
   
   nav li {
@@ -26,10 +26,11 @@ body {
   }
   
   nav a {
-    color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
   }
-  
   main {
     margin: 20px;
     padding: 20px;
@@ -44,7 +45,7 @@ body {
     margin: 10px; /* Margen entre las cartas */
     border-radius: 10px;
     border: 1px solid #ccc;
-    background-color: #b2e97e;
+    background-color: #0ca32d;
     /*font-size: 20px;
     font-family: Arial, sans-serif;
     background-color: #9bd1a7;

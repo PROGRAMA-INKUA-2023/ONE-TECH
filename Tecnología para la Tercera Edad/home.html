@@ -3,39 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="icon" href="img/FAVICON.png" type="image/x-icon">
     <title>Document</title>
+
+    <script>
+        // Función para abrir el popup
+        function openPopup() {
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Función para cerrar el popup
+        function closePopup() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Tutoriales para la Tercera Edad</h1>
-      </header>
-      <nav>
+        <header>
+            <div class="logo">
+                <img src="img/Frame 1.png" alt="Descripción del logo">
+            </div>
+            <h1>Un Espacio para acercarte a la Tecnología</h1>
+        </header>
+    <nav>
         <ul>
-          <li><a href="home.html">Inicio</a></li>
-          <li><a href="tutoriales.html">Tutoriales</a></li>
-          <li><a href="#">Contacto</a></li>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="tutoriales.html">Tutoriales</a></li>
+            <li><a onclick="openPopup()">Contacto</a></li>
         </ul>
-      </nav>
-      <main>
-        <p>Encuentra tutoriales sencillos para aprender a utilizar herramientas en Internet.</p>
-      </main>
-      <main class="card1" >
-        <h2>Tutoriales Disponibles</h2>
-        <ul>
-          <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
-          <li><a href="#">Navegación en la web</a></li>
-          <!-- Agrega más tutoriales aquí -->
-        </ul>
-      </main>
+    </nav>
 
-      <main class="card1" >
+    <div>
+        <p>Encuentra tutoriales sencillos para aprender a utilizar herramientas en Internet.</p>
+    </div>
+
+    <!--<div id="card1" class="card1">
         <h2>Tutoriales Disponibles</h2>
         <ul>
-          <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
-          <li><a href="#">Navegación en la web</a></li>
-          <!-- Agrega más tutoriales aquí -->
-        </ul>
-      </main>
+            <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
+            <li><a href="#">Navegación en la web</a></li>-->
+    <!-- Agrega más tutoriales aquí -->
+    <!--</ul>
+    </div>
+
+    <div id="card2" class="card1">
+        <h2>Tutoriales Disponibles</h2>
+        <ul>
+            <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
+            <li><a href="#">Navegación en la web</a></li>-->
+    <!-- Agrega más tutoriales aquí -->
+    <!--</ul>
+    </div>-->
+
+    <section>
+        <article class="card1">
+            <h2>Clave de Seguridad Social</h2>
+
+            <iframe src="../Videos/TUTORIAL_ Clave de la Seguridad Social.mp4" frameborder="0"></iframe>
+
+        </article>
+
+        <article class="card1">
+            <h2>Tutorial 2</h2>
+        </article>
+
+        <article class="card1">
+            <h2>Tutorial 3</h2>
+        </article>
+
+    </section>
+
+
+
+
+    <!-- Formulario popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <button class="close-popup-button" onclick="closePopup()">X</button>
+        <h2>Formulario de Contacto</h2>
+
+        <form action="https://formspree.io/f/moqorwro" method="POST">
+            <label>
+                Nombre:
+                <input type="text" name="nombre" required>
+            </label>
+
+            <label>
+                Mail:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Mensaje:
+                <textarea name="message" required></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button class="button-enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+
+            <!-- Footer -->
+    <footer> 
+        <div class="buscador">
+            <form action="/buscar" method="get">
+                <input type="text" name="q" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="contactos">
+            <ul>
+                <li><a href="https://wa.me/TUNUMERO" target="_blank">WhatsApp</a></li>
+                <li><a href="mailto:tucorreo@gmail.com">Correo Electrónico</a></li>
+            </ul>
+        </div>
+        <div class="redes-sociales">
+            <ul>
+                <li><a href="URL_de_Tu_Facebook" target="_blank">Facebook</a></li>
+                <li><a href="URL_de_Tu_Twitter" target="_blank">Twitter</a></li>
+                <!-- Agrega más redes sociales según sea necesario -->
+            </ul>
+        </div>
+       
+    </footer>
+
 </body>
 </html>
