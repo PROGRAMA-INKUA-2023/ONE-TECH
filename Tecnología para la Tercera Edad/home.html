@@ -19,13 +19,23 @@
             document.getElementById("overlay").style.display = "none";
             document.getElementById("popup").style.display = "none";
         }
+        window.onscroll = function() {
+            var header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
     </script>
 
 </head>
 
 <body>
     <header>
-        <h1>GrandTech!</h1>
+        <div class="logo">
+            <h1>GrandTech!</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="home.html">Inicio</a></li>
