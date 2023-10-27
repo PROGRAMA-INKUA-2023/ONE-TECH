@@ -39,6 +39,12 @@ body {
     font-size: 30px;
     text-align: center;
   }
+
+a:hover {
+    color: #000;
+    transition: 1s;
+}
+
 .card1 {
     cursor: pointer;
     float: left;
