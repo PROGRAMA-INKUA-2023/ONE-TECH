@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="icon" href="img/FAVICON.png" type="image/x-icon">
-    <title>Tecnología Para la Tercera Edad</title>
+    <title>GrandTech!</title>
 
     <script>
         // Función para abrir el popup
@@ -19,26 +20,45 @@
             document.getElementById("overlay").style.display = "none";
             document.getElementById("popup").style.display = "none";
         }
+        window.onscroll = function() {
+            var header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
+        window.onscroll = function() {
+            var header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
     </script>
 
 </head>
-<body>
-        <header>
-            <div class="logo">
-                <img src="img/Frame 1.png" alt="Descripción del logo">
-            </div>
-            <h1>Un Espacio para acercarte a la Tecnología</h1>
-        </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="tutoriales.html">Tutoriales</a></li>
-            <li><a onclick="openPopup()">Contacto</a></li>
-        </ul>
-    </nav>
 
-    <div>
-        <p>Encuentra tutoriales sencillos para aprender a utilizar herramientas en Internet.</p>
+<body>
+    <header>
+        <h1 class="header__h1">GrandTech!</h1>
+        <div class="logo">
+            <img src="img/Frame 1.png" alt="Descripción del logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a onclick="openPopup()">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="descripcion">
+        <h2 class="descripcion__h2">Convertimos abuelos<br>En expertos digitales</h2>
+        <p class="descripcion__p">¡Bienvenidos a GrandTech, tu aliado digital para una vida más sencilla y conectada. Como el nieto digital que siempre quisiste, te convertiremos en un experto digital en cuestión de semanas. Aprende a dominar tu smartphone, navegar por la web,
+            gestionar tu correo electrónico, tomar fotos y mucho más, con la ayuda de nuestros amigables expertos. Simplifica tu vida y disfruta al máximo de la tecnología. Únete a GrandTech y descubre un mundo de posibilidades digitales. ¡Regístrate
+            hoy y abraza el futuro con confianza!</p>
     </div>
 
     <!--<div id="card1" class="card1">
@@ -109,4 +129,5 @@
 
 
 </body>
+
 </html>
