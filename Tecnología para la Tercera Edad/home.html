@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
-    <title>GrandTech</title>
+    <link rel="icon" href="img/FAVICON.png" type="image/x-icon">
+    <title>GrandTech!</title>
 
     <script>
         // Función para abrir el popup
@@ -27,14 +28,23 @@
                 header.classList.remove('scrolled');
             }
         };
+        window.onscroll = function() {
+            var header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        };
     </script>
 
 </head>
 
 <body>
     <header>
+        <h1 class="header__h1">GrandTech!</h1>
         <div class="logo">
-            <h1>GrandTech!</h1>
+            <img src="img/Frame 1.png" alt="Descripción del logo">
         </div>
         <nav>
             <ul>
@@ -44,7 +54,6 @@
             </ul>
         </nav>
     </header>
-
     <div>
         <h2>Convertimos abuelos<br>En expertos digitales</h2>
         <p>Encuentra tutoriales sencillos para aprender a utilizar herramientas en Internet.</p>

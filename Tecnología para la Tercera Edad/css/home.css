@@ -11,11 +11,11 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    color: #000000;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: #b6df9f;
+    color: #222020;
     text-align: center;
     padding: 0px;
     transition: background-color 0.5s ease;
@@ -31,8 +31,8 @@ header.scrolled nav a {
 
 nav {
     margin: 0em;
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 25px;
     right: 0px;
 }
 
@@ -40,7 +40,6 @@ nav ul {
     font-size: 25px;
     text-align: right;
     list-style-type: none;
-    background-color: #ffffff;
     margin: 0;
     content: inherit;
     padding: 0;
@@ -66,6 +65,11 @@ main {
 p {
     font-size: 30px;
     text-align: center;
+}
+
+a:hover {
+    color: #000;
+    transition: 1s;
 }
 
 .card1 {
@@ -301,3 +305,34 @@ iframe {
 
 
 /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
+
+
+/* LOGO */
+
+.header__h1 {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: left;
+    font-size: 35px;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    /* Espacio entre el logo y el título */
+}
+
+.logo img {
+    transition: transform 0.3s;
+    ;
+    /* Duración de la transición y propiedad a animar */
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    /* Opacidad reducida */
+}
