@@ -14,7 +14,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    background-color: #b6df9f;
+    background-color: #82b8ff;
     color: #222020;
     text-align: center;
     padding: 0px;
@@ -57,19 +57,33 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    margin: 20px;
-    padding: 20px;
-}
-
-p {
-    font-size: 30px;
-    text-align: center;
-}
-
 a:hover {
     color: #000;
     transition: 1s;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+}
+
+.descripcion__h2 {
+    display: inline-block;
+    background-color: green;
+    margin: 10px;
+    width: 50%;
+    font-size: 50px;
+}
+
+.descripcion__p {
+    display: inline-block;
+    font-size: 24px;
+    text-align: left;
+    background-color: blue;
+    margin: 10px;
+    width: 50%;
 }
 
 .card1 {
