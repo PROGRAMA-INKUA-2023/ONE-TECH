@@ -1,7 +1,12 @@
+
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    /*Letra de google*/
+    font-family: 'Changa One', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;    
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
   }
   
   header {
@@ -37,56 +42,13 @@ body {
     padding: 20px;
   }
   
-  p {
-    font-size: 30px;
-    text-align: center;
-  }
-.card1 {
-    cursor: pointer;
-    float: left;
-    text-align: center;
-    width: 30%; /* Ancho de cada carta */
-    height: 300px; /* Alto de cada carta */
-    margin: 10px; /* Margen entre las cartas */
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: #60a803;
-    transition: transform 0.3s;
-}
+  
 
 
-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    background-color: red;
-    background-color: #424949;
-}
 
-article {
-    text-align: center;
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
-    background-color: #333;
-    transition: transform 0.3s;
-    margin-left: 5%;
-    color: white;
-    font-family: Verdana;
-    font-size: 15px;
-}
 
-article:hover {
-    transform: scale(1.05); /* Escala el elemento en un 10% más grande cuando pasas el mouse sobre él */
-}
 
-iframe {
-    width: 90%;
-    height: 70%
-}
+
 
 
 /*<!-- Estilo para formulario PopUp -->*/
@@ -262,9 +224,6 @@ iframe {
     transform: scale(1.2); /* Opacidad reducida */
 }
 
-h1 {
-    font-size: 24px; /* Tamaño del título */
-}
 
 /* Estilos para el footer */
 footer {

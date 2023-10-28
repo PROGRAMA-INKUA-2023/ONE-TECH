@@ -4,23 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/tutorial1.css">
+    
+    <!--bootstrap::: Debemos ponerlo en cada plantilla-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Letra google fon:::-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Josefin+Sans:ital,wght@1,700&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-    <header>
-    <h1>Tutorial: Cómo enviar un correo electrónico</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-succes">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tutoriales.html">Tutoriales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            
+          </ul>
+          <span class="navbar-text">
+            <h1>ONE-TECH</h1>
+          </span>
+        </div>
+      </div>
+    </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="home.html">Inicio</a></li>
-      <li><a href="tutoriales.html">Tutoriales</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-  <main>
-    <h2>Paso 1: Iniciar sesión en tu correo electrónico</h2>
-    <p>Aquí va la descripción del primer paso.</p>
-    <!-- Agrega más pasos e instrucciones aquí -->
+    
+  <main class="Contenedor p-5">
+    <div>
+      <div class="titulo p-5">
+        <h1>¿Que es la clave de Seguridad Social?</h1>
+      </div>
+      <div>
+        <iframe width="560" height="315" src="/Videos/TUTORIAL_ Clave de la Seguridad Social.mp4" frameborder="0" allowfullscreen></iframe>
+        <p class="p-5">Descripción del Video:</p>
+        <ol>
+          <li>Accede a la página web de ANSES.</li>
+          <li>Selecciona la opción "crear" para obtener la Clave de la Seguridad Social.</li>
+          <li>Ingresa tu información personal, incluyendo tu número de identificación y datos de contacto.</li>
+          <li>Crea una contraseña segura para tu Clave de la Seguridad Social.</li>
+          <li>Completa los pasos necesarios de verificación de información.</li>
+          <li>ANSES confirmará que tu Clave de la Seguridad Social ha sido creada con éxito.</li>
+        </ol>
+        
+      </div>
+
+    </div>
+    
   </main>
+  <footer> 
+    <div class="buscador">
+        <form action="/buscar" method="get">
+            <input type="text" name="q" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <div class="contactos">
+        <ul>
+            <li><a href="https://wa.me/TUNUMERO" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:tucorreo@gmail.com">Correo Electrónico</a></li>
+        </ul>
+    </div>
+    <div class="redes-sociales">
+        <ul>
+            <li><a href="URL_de_Tu_Facebook" target="_blank">Facebook</a></li>
+            <li><a href="URL_de_Tu_Twitter" target="_blank">Twitter</a></li>
+            <!-- Agrega más redes sociales según sea necesario -->
+        </ul>
+    </div>
+   
+</footer>
+
 </body>
 </html>
