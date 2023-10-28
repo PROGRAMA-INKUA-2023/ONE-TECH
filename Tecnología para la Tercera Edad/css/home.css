@@ -7,14 +7,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    background-color: #58a0ff;
+  }
+  
+  header {
+    background-color: #a7e952;
     color: #222020;
     text-align: center;
     padding: 0px;
@@ -41,8 +37,10 @@ nav ul {
     text-align: right;
     list-style-type: none;
     margin: 0;
-    content: inherit;
-    padding: 0;
+    padding: 10px;
+  }
+  
+  nav li {
     display: inline;
 }
 
@@ -50,42 +48,24 @@ nav li {
     display: inline;
     content: inherit;
     margin: 10px;
-}
-
-nav a {
-    color: #000000;
+  }
+  
+  nav a {
     text-decoration: none;
-}
-
-a:hover {
-    color: #000;
-    transition: 1s;
-}
-
-.descripcion {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    position: relative;
-}
-
-.descripcion__h2 {
-    display: inline-block;
-    background-color: green;
-    margin: 10px;
-    width: 50%;
-    font-size: 50px;
-}
-
-.descripcion__p {
-    display: inline-block;
-    font-size: 24px;
-    text-align: left;
-    background-color: blue;
-    margin: 10px;
-    width: 50%;
-}
-
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  main {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  p {
+    font-size: 30px;
+    text-align: center;
+  }
 .card1 {
     cursor: pointer;
     float: left;
@@ -98,7 +78,7 @@ a:hover {
     /* Margen entre las cartas */
     border-radius: 10px;
     border: 1px solid #ccc;
-    background-color: #b2e97e;
+    background-color: #60a803;
     transition: transform 0.3s;
 }
 
@@ -317,36 +297,84 @@ iframe {
     /* Cambio de color al pasar el mouse por encima */
 }
 
-
 /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
-
 
 /* LOGO */
 
-.header__h1 {
-    display: inline-block;
-    position: absolute;
-    top: 25px;
-    left: 0;
-    text-align: left;
-    font-size: 35px;
-}
-
 .logo {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    /* Espacio entre el logo y el título */
+    margin-right: 20px; /* Espacio entre el logo y el título */
+    
 }
 
 .logo img {
-    transition: transform 0.3s;
-    ;
-    /* Duración de la transición y propiedad a animar */
+    transition: transform 0.3s;; /* Duración de la transición y propiedad a animar */
 }
 
 .logo img:hover {
-    transform: scale(1.1);
-    /* Opacidad reducida */
+    transform: scale(1.2); /* Opacidad reducida */
+}
+
+h1 {
+    font-size: 24px; /* Tamaño del título */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #a7e952;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactos ul,
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contactos ul li,
+.redes-sociales ul li {
+    margin: 5px 0;
+}
+
+.buscador {
+    margin-top: 20px;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    color: #0c0c0c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Estilos para el buscador */
+.buscador {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buscador input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+
+.buscador button {
+    background-color: #60a803; /* Cambia el color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: -50px; /* Mueve el botón a la izquierda para superponerlo al campo de entrada */
+    cursor: pointer;
+}
+
+/* Estilos para el botón al pasar el mouse */
+.buscador button:hover {
+    background-color: #79d13f; /* Cambia el color al pasar el mouse */
 }
