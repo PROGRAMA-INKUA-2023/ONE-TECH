@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="icon" href="img/FAVICON.png" type="image/x-icon">
     <title>GranTech</title>
-    <!--Fuente Agbalumo utilizada en el título-->
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
-    <!--Fuete Josefina utilizada en todo el documento-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript para PopUp y cambio de estilos en el encabezado -->
     <script>
         // Función para abrir el popup
         function openPopup() {
@@ -27,14 +29,8 @@
             document.getElementById("overlay").style.display = "none";
             document.getElementById("popup").style.display = "none";
         }
-        window.onscroll = function() {
-            var header = document.querySelector('header');
-            if (window.pageYOffset > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        };
+
+        // Cambio de estilos en el encabezado al hacer scroll
         window.onscroll = function() {
             var header = document.querySelector('header');
             if (window.pageYOffset > 50) {
@@ -44,7 +40,6 @@
             }
         };
     </script>
-
 </head>
 
 <body>
@@ -72,6 +67,7 @@
         </div>
     </div>
 
+    <!-- Sección de tutoriales (comentada por ser contenido faltante) -->
     <!--<div id="card1" class="card1">
         <h2>Tutoriales Disponibles</h2>
         <ul>
@@ -81,7 +77,8 @@
     <!--</ul>
     </div>
 
-    <div id="card2" class="card1">
+    <!-- Sección de tutoriales (comentada por ser contenido faltante) -->
+    <!--<div id="card2" class="card1">
         <h2>Tutoriales Disponibles</h2>
         <ul>
             <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
@@ -90,15 +87,14 @@
     <!--</ul>
     </div>-->
 
+    <!-- Sección de contenido principal -->
     <section>
         <article class="card1">
             <h2>Clave de Seguridad Social</h2>
-
             <video width="320" height="240" controls>
                 <source src="../Videos/TUTORIAL_ Clave de la Seguridad Social.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
-
         </article>
 
         <article class="card1">
@@ -112,24 +108,18 @@
         <article class="card1">
             <h2>Aprender es un derecho y es posible.</h2>
         </article>
-
     </section>
-
-
-
 
     <!-- Formulario popup -->
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup">
         <button class="close-popup-button" onclick="closePopup()">X</button>
         <h2>Formulario de Contacto</h2>
-
         <form action="https://formspree.io/f/moqorwro" method="POST">
             <label>
                 Nombre:
                 <input type="text" name="nombre" required>
             </label>
-
             <label>
                 Mail:
                 <input type="email" name="email" required>
@@ -138,7 +128,6 @@
                 Mensaje:
                 <textarea name="message" required></textarea>
             </label>
-            <!-- your other form fields go here -->
             <button class="button-enviar" type="submit">Enviar</button>
         </form>
     </div>
@@ -164,9 +153,7 @@
                 <!-- Agrega más redes sociales según sea necesario -->
             </ul>
         </div>
-
     </footer>
-
 </body>
 
 </html>
