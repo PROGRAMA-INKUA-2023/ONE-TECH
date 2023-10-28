@@ -337,3 +337,69 @@
         transform: scale(1.1);
         /* Opacidad reducida */
     }
+    /* Estilos para el footer */
+    
+    footer {
+        background-color: #a7e952;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .contactos ul,
+    .redes-sociales ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .contactos ul li,
+    .redes-sociales ul li {
+        margin: 5px 0;
+    }
+    
+    .buscador {
+        margin-top: 20px;
+    }
+    /* Estilos para los enlaces en el footer */
+    
+    footer a {
+        color: #0c0c0c;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    /* Estilos para el buscador */
+    
+    .buscador {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .buscador input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        /* Ajusta el ancho según tus necesidades */
+    }
+    
+    .buscador button {
+        background-color: #60a803;
+        /* Cambia el color del botón */
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin-left: -50px;
+        /* Mueve el botón a la izquierda para superponerlo al campo de entrada */
+        cursor: pointer;
+    }
+    /* Estilos para el botón al pasar el mouse */
+    
+    .buscador button:hover {
+        background-color: #79d13f;
+        /* Cambia el color al pasar el mouse */
+    }
