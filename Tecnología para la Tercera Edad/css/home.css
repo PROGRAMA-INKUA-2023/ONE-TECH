@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,40 +8,20 @@ body {
     background-color: #a7e952;
     color: #222020;
     text-align: center;
-    padding: 0px;
-    transition: background-color 0.5s ease;
-}
-
-header.scrolled {
-    background-color: #fff;
-}
-
-header.scrolled nav a {
-    color: #000;
-}
-
-nav {
-    margin: 0em;
-    position: absolute;
-    top: 25px;
-    right: 0px;
-}
-
-nav ul {
+    padding: 20px;
+  }
+  
+  nav ul {
     font-size: 25px;
-    text-align: right;
+    text-align: center;
     list-style-type: none;
+    background-color: #60a803;
     margin: 0;
     padding: 10px;
   }
   
   nav li {
     display: inline;
-}
-
-nav li {
-    display: inline;
-    content: inherit;
     margin: 10px;
   }
   
@@ -70,17 +45,15 @@ nav li {
     cursor: pointer;
     float: left;
     text-align: center;
-    width: 30%;
-    /* Ancho de cada carta */
-    height: 300px;
-    /* Alto de cada carta */
-    margin: 10px;
-    /* Margen entre las cartas */
+    width: 30%; /* Ancho de cada carta */
+    height: 300px; /* Alto de cada carta */
+    margin: 10px; /* Margen entre las cartas */
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #60a803;
     transition: transform 0.3s;
 }
+
 
 section {
     display: flex;
@@ -107,8 +80,7 @@ article {
 }
 
 article:hover {
-    transform: scale(1.05);
-    /* Escala el elemento en un 10% más grande cuando pasas el mouse sobre él */
+    transform: scale(1.05); /* Escala el elemento en un 10% más grande cuando pasas el mouse sobre él */
 }
 
 iframe {
@@ -119,15 +91,11 @@ iframe {
 
 /*<!-- Estilo para formulario PopUp -->*/
 
-
 /* Estilos para el popup */
-
-
 /*Con media, puedo hacer condiciones como preguntar si la pantalla tiene un máximo de 768px y 
     si esta condicion se cumple se ejecutan los estilos que se encuentran dentro de las llaves
     de esta condición, generalmente es el tamaño máximo de una tablet
 */
-
 @media (max-width: 768px) {
     /* Estilos para el overlay de fondo */
     .overlay {
@@ -137,10 +105,10 @@ iframe {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Fondo semitransparente */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
         z-index: 1;
     }
+
     .popup {
         display: none;
         position: absolute;
@@ -159,16 +127,15 @@ iframe {
         align-content: center;
         text-align: center;
     }
-    /* Estilos para el formulario dentro del popup */
-    .popup form {
-        text-align: center;
-        width: 90%
-    }
+
+        /* Estilos para el formulario dentro del popup */
+        .popup form {
+            text-align: center;
+            width: 90%
+        }
 }
 
-
 /*Ahora pregunto si el minimo de la pantalla es de 769px se ejecutan los siguientes estilos*/
-
 @media (min-width: 769px) {
     /* Estilos para el overlay de fondo */
     .overlay {
@@ -178,10 +145,10 @@ iframe {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        /* Fondo semitransparente */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
         z-index: 1;
     }
+
     .popup {
         display: none;
         position: fixed;
@@ -199,16 +166,14 @@ iframe {
         align-content: center;
         text-align: center;
     }
-    /* Estilos para el formulario dentro del popup */
-    .popup form {
-        text-align: center;
-        width: 90%
-    }
+        /* Estilos para el formulario dentro del popup */
+        .popup form {
+            text-align: center;
+            width: 90%
+        }
 }
 
-
 /* Estilos para el botón que abre el popup */
-
 .open-popup-button {
     cursor: pointer;
     background-color: #B03A2E;
@@ -217,27 +182,20 @@ iframe {
     padding: 10px 20px;
     border-radius: 5px;
     position: fixed;
-    bottom: 20px;
-    /* Ajusta la distancia desde la parte inferior según tu preferencia */
-    right: 20px;
-    /* Ajusta la distancia desde la derecha según tu preferencia */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Sombra */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+    right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
     text-align: center;
 }
 
 .open-popup-button:hover {
-    background-color: #641E16;
-    /* Cambio de color al pasar el mouse por encima */
+    background-color: #641E16; /* Cambio de color al pasar el mouse por encima */
 }
 
-
 /* Estilos para el botón de cierre del popup */
-
 .close-popup-button {
     cursor: pointer;
-    background-color: #e74c3c;
-    /* Rojo */
+    background-color: #e74c3c; /* Rojo */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -247,9 +205,7 @@ iframe {
     right: 10px;
 }
 
-
 /* Estilos para los campos del formulario */
-
 .popup input[type="text"],
 .popup input[type="email"],
 .popup textarea {
@@ -261,9 +217,7 @@ iframe {
     border-radius: 5px;
 }
 
-
 /* Estilos para el botón de envío */
-
 .popup input[type="submit"] {
     background-color: #2ecc71;
     color: white;
@@ -273,9 +227,7 @@ iframe {
     cursor: pointer;
 }
 
-
 /* Estilos para el botón que envia mail */
-
 .button-enviar {
     cursor: pointer;
     background-color: #B03A2E;
@@ -283,18 +235,14 @@ iframe {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    bottom: 20px;
-    /* Ajusta la distancia desde la parte inferior según tu preferencia */
-    right: 20px;
-    /* Ajusta la distancia desde la derecha según tu preferencia */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    /* Sombra */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+    right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
     text-align: center;
 }
 
 .button-enviar:hover {
-    background-color: #641E16;
-    /* Cambio de color al pasar el mouse por encima */
+    background-color: #641E16; /* Cambio de color al pasar el mouse por encima */
 }
 
 /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
