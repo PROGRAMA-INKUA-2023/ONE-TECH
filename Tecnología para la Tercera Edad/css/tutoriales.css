@@ -9,9 +9,9 @@ body {
     color: #222020;
     text-align: center;
     padding: 20px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     font-size: 25px;
     text-align: center;
     list-style-type: none;
@@ -40,12 +40,9 @@ nav ul {
     cursor: pointer;
     float: left;
     text-align: center;
-    width: 200px;
-    /* Ancho de cada carta */
-    height: 300px;
-    /* Alto de cada carta */
-    margin: 10px;
-    /* Margen entre las cartas */
+    width: 200px; /* Ancho de cada carta */
+    height: 300px; /* Alto de cada carta */
+    margin: 10px; /* Margen entre las cartas */
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #71d117;
