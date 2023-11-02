@@ -1,414 +1,427 @@
-/* Establecer estilos globales */
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-
-/* Establecer estilos para el cuerpo del documento */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Estilos para el encabezado */
-
-.encabezado {
-    background-image: linear-gradient(315deg, #41d2d5, rgb(118, 118, 255) 70%);
-}
-
-
-/* Estilos para el encabezado dentro de la página */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    color: #222020;
-    text-align: center;
-    padding: 0px;
-    transition: background-color 0.5s ease;
-}
-
-
-/* Estilos para el encabezado cuando se hace scroll */
-
-header.scrolled {
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    z-index: 100;
-}
-
-
-/* Estilos para la barra de navegación */
-
-nav {
-    margin: 0em;
-    position: absolute;
-    top: 25px;
-    right: 0px;
-}
-
-nav ul {
-    font-size: 25px;
-    text-align: right;
-    list-style-type: none;
-    margin: 0;
-    content: inherit;
-    padding: 0;
-    display: inline;
-}
-
-nav li {
-    display: inline;
-    content: inherit;
-    margin: 10px;
-}
-
-nav a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #000;
-    transition: 1s;
-}
-
-
-/* Estilos para la sección de descripción */
-
-.descripcion {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    position: relative;
-}
-
-.descripcion__h2 {
-    display: inline-block;
-    margin: 10px;
-    width: 50%;
-    font-size: 50px;
-    position: relative;
-    padding: 20px;
-}
-
-.descripcion__p {
-    display: inline-block;
-    font-size: 24px;
-    text-align: left;
-    margin: 10px;
-    width: 50%;
-    color: white;
-    position: relative;
-    padding: 20px;
-    text-shadow: 1px 1px 30px #000;
-}
-
-
-/* Estilos para las tarjetas */
-
-.card1 {
-    cursor: pointer;
-    float: left;
-    text-align: center;
-    width: 30%;
-    height: 300px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: #60a803;
-    transition: transform 0.3s;
-}
-
-
-/* Estilos para la sección principal */
-
-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    background-color: #424949;
-}
-
-
-/* Estilos para los artículos */
-
-article {
-    text-align: center;
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
-    background-color: #333;
-    transition: transform 0.3s;
-    margin-left: 5%;
-    color: white;
-    font-family: Verdana;
-    font-size: 15px;
-}
-
-article:hover {
-    transform: scale(1.05);
-}
-
-iframe {
-    width: 90%;
-    height: 70%;
-}
-
-
-/* Estilos para el formulario PopUp en dispositivos con pantalla pequeña */
-
-@media (max-width: 768px) {
-    .overlay {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Josefin Sans', sans-serif;
     }
-    .popup {
-        display: none;
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        color: #222020;
+        text-align: center;
+        padding: 0px;
+        transition: background-color 0.5s ease;
+        border-bottom: 3px solid #7aafff;
+    }
+    
+    .encabezado {
+        background-image: linear-gradient(315deg, #41d2d5, #1370fd 70%);
+    }
+    /* LOGO */
+    
+    .header__h1 {
+        display: inline-block;
         position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 90%;
-        height: 90%;
+        top: 15px;
+        left: 30px;
+        text-align: left;
+        font-size: 35px;
+        font-family: 'Agbalumo', sans-serif;
+        font-weight: 1;
+        color: whitesmoke;
+    }
+    
+    .header__h1.scroll-color {
+        color: #474747;
+    }
+    
+    .logo {
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        /* Espacio entre el logo y el título */
+    }
+    
+    .logo img {
+        transition: transform 0.3s;
+        ;
+        /* Duración de la transición y propiedad a animar */
+    }
+    
+    .logo img:hover {
+        transform: scale(1.1);
+        /* Opacidad reducida */
+    }
+    
+    nav {
+        margin: 0em;
+        position: absolute;
+        top: 25px;
+        right: 0px;
+        padding: 1em;
+    }
+    
+    nav ul {
+        font-size: 25px;
+        text-align: right;
+        list-style-type: none;
+        margin: 0;
+        content: inherit;
+        padding: 0;
+        display: inline;
+    }
+    
+    nav li {
+        display: inline;
+        content: inherit;
+        margin: 10px;
+    }
+    
+    nav a {
+        color: #535353;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #000;
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    
+    header.escrol {
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 100;
+    }
+    
+    .descripcion {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .descripcion__div {}
+    
+    .descripcion__div--h2 {
+        display: block;
+        width: 100%;
+        font-size: 50px;
+        color: white;
+        padding: 25px;
+    }
+    
+    .mark {
+        color: #fece26;
+    }
+    
+    .descripcion__div--ul {
+        display: block;
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+        color: white;
+    }
+    
+    .descripcion__li {
+        margin-bottom: 15px;
+        padding: 0px 25px 0px 25px;
+    }
+    
+    .descripcion__img {
+        width: 50%;
+        align-self: center;
+        position: static;
+        display: inline-block;
+        padding: 30px;
+    }
+    
+    .card1 {
+        cursor: pointer;
+        float: left;
+        text-align: center;
+        width: 30%;
+        /* Ancho de cada carta */
+        height: 300px;
+        /* Alto de cada carta */
+        margin: 10px;
+        /* Margen entre las cartas */
+        border-radius: 10px;
+        border: 1px solid #ccc;
         background-color: #60a803;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        z-index: 2;
-        border-radius: 5px;
-        color: white;
-        align-items: center;
-        align-content: center;
-        text-align: center;
+        transition: transform 0.3s;
     }
-    .popup form {
+    
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        background-color: red;
+        background-color: #424949;
+    }
+    
+    article {
         text-align: center;
         width: 90%;
+        padding: 10px;
+        margin: 10px;
+        background-color: #333;
+        transition: transform 0.3s;
+        margin-left: 5%;
+        color: white;
+        font-family: Verdana;
+        font-size: 15px;
     }
-}
-
-
-/* Estilos para el formulario PopUp en dispositivos con pantalla grande */
-
-@media (min-width: 769px) {
-    .overlay {
-        display: none;
+    
+    article:hover {
+        transform: scale(1.05);
+        /* Escala el elemento en un 10% más grande cuando pasas el mouse sobre él */
+    }
+    
+    iframe {
+        width: 90%;
+        height: 70%
+    }
+    /*<!-- Estilo para formulario PopUp -->*/
+    /* Estilos para el popup */
+    /*Con media, puedo hacer condiciones como preguntar si la pantalla tiene un máximo de 768px y 
+    si esta condicion se cumple se ejecutan los estilos que se encuentran dentro de las llaves
+    de esta condición, generalmente es el tamaño máximo de una tablet
+*/
+    
+    @media (max-width: 768px) {
+        /* Estilos para el overlay de fondo */
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo semitransparente */
+            z-index: 1;
+        }
+        .popup {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            /*transform: translate(-50%, -50%);*/
+            width: 90%;
+            height: 90%;
+            background-color: #60a803;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            border-radius: 5px;
+            color: white;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+        /* Estilos para el formulario dentro del popup */
+        .popup form {
+            text-align: center;
+            width: 90%
+        }
+    }
+    /*Ahora pregunto si el minimo de la pantalla es de 769px se ejecutan los siguientes estilos*/
+    
+    @media (min-width: 769px) {
+        /* Estilos para el overlay de fondo */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo semitransparente */
+            z-index: 1;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*background-color: #60a803;*/
+            background: linear-gradient(#60a803, #8de933);
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 2;
+            border-radius: 5px;
+            color: white;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+        }
+        /* Estilos para el formulario dentro del popup */
+        .popup form {
+            text-align: center;
+            width: 90%
+        }
+    }
+    /* Estilos para el botón que abre el popup */
+    
+    .open-popup-button {
+        cursor: pointer;
+        background-color: #B03A2E;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
         position: fixed;
-        top: 0;
-        left: 0;
+        bottom: 20px;
+        /* Ajusta la distancia desde la parte inferior según tu preferencia */
+        right: 20px;
+        /* Ajusta la distancia desde la derecha según tu preferencia */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        /* Sombra */
+        text-align: center;
+    }
+    
+    .open-popup-button:hover {
+        background-color: #641E16;
+        /* Cambio de color al pasar el mouse por encima */
+    }
+    /* Estilos para el botón de cierre del popup */
+    
+    .close-popup-button {
+        cursor: pointer;
+        background-color: #e74c3c;
+        /* Rojo */
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    /* Estilos para los campos del formulario */
+    
+    .popup input[type="text"],
+    .popup input[type="email"],
+    .popup textarea {
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-    }
-    .popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: linear-gradient(#60a803, #8de933);
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        z-index: 2;
+        padding: 10px;
+        /*margin: 5px 0;*/
+        margin-left: 2.5%;
+        border: 1px solid #2ecc71;
         border-radius: 5px;
+    }
+    /* Estilos para el botón de envío */
+    
+    .popup input[type="submit"] {
+        background-color: #2ecc71;
         color: white;
-        align-items: center;
-        align-content: center;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Estilos para el botón que envia mail */
+    
+    .button-enviar {
+        cursor: pointer;
+        background-color: #B03A2E;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        bottom: 20px;
+        /* Ajusta la distancia desde la parte inferior según tu preferencia */
+        right: 20px;
+        /* Ajusta la distancia desde la derecha según tu preferencia */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        /* Sombra */
         text-align: center;
     }
-    .popup form {
-        text-align: center;
-        width: 90%;
+    
+    .button-enviar:hover {
+        background-color: #641E16;
+        /* Cambio de color al pasar el mouse por encima */
     }
-}
-
-
-/* Estilos para el botón que abre el PopUp */
-
-.open-popup-button {
-    cursor: pointer;
-    background-color: #B03A2E;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.open-popup-button:hover {
-    background-color: #641E16;
-}
-
-
-/* Estilos para el botón de cierre del PopUp */
-
-.close-popup-button {
-    cursor: pointer;
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-
-/* Estilos para los campos del formulario */
-
-.popup input[type="text"],
-.popup input[type="email"],
-.popup textarea {
-    width: 100%;
-    padding: 10px;
-    margin-left: 2.5%;
-    border: 1px solid #2ecc71;
-    border-radius: 5px;
-}
-
-
-/* Estilos para el botón de envío en el PopUp */
-
-.popup input[type="submit"] {
-    background-color: #2ecc71;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-/* Estilos para el botón que envía el correo */
-
-.button-enviar {
-    cursor: pointer;
-    background-color: #B03A2E;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    bottom: 20px;
-    right: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.button-enviar:hover {
-    background-color: #641E16;
-}
-
-
-/* Estilos para el logo */
-
-.header__h1 {
-    display: inline-block;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    text-align: left;
-    font-size: 35px;
-    font-family: 'Agbalumo', sans-serif;
-    font-weight: 1;
-}
-
-.logo {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.logo img {
-    transition: transform 0.3s;
-}
-
-.logo img:hover {
-    transform: scale(1.1);
-}
-
-
-/* Estilos para el footer */
-
-footer {
-    background-color: #a7e952;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.contactos ul,
-.redes-sociales ul {
-    list-style: none;
-    padding: 0;
-}
-
-.contactos ul li,
-.redes-sociales ul li {
-    margin: 5px 0;
-}
-
-
-/* Estilos para los enlaces en el footer */
-
-footer a {
-    color: #0c0c0c;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
-/* Estilos para el buscador */
-
-.buscador {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.buscador input[type="text"] {
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 200px;
-}
-
-.buscador button {
-    background-color: #60a803;
-    color: #fff;
-    border: none;
-    border-radius: 25px;
-    padding: 10px 20px;
-    margin-left: -50px;
-    cursor: pointer;
-}
-
-.buscador button:hover {
-    background-color: #79d13f;
-}
+    /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
+    /* Estilos para el footer */
+    
+    footer {
+        background-color: #a7e952;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .contactos ul,
+    .redes-sociales ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .contactos ul li,
+    .redes-sociales ul li {
+        margin: 5px 0;
+    }
+    
+    .buscador {
+        margin-top: 20px;
+    }
+    /* Estilos para los enlaces en el footer */
+    
+    footer a {
+        color: #0c0c0c;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+    /* Estilos para el buscador */
+    
+    .buscador {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .buscador input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        /* Ajusta el ancho según tus necesidades */
+    }
+    
+    .buscador button {
+        background-color: #60a803;
+        /* Cambia el color del botón */
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        margin-left: -50px;
+        /* Mueve el botón a la izquierda para superponerlo al campo de entrada */
+        cursor: pointer;
+    }
+    /* Estilos para el botón al pasar el mouse */
+    
+    .buscador button:hover {
+        background-color: #79d13f;
+        /* Cambia el color al pasar el mouse */
+    }

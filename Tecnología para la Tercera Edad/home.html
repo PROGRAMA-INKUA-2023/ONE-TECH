@@ -33,10 +33,13 @@
         // Cambio de estilos en el encabezado al hacer scroll
         window.onscroll = function() {
             var header = document.querySelector('header');
+            var headerH1 = document.querySelector('.header__h1');
             if (window.pageYOffset > 50) {
-                header.classList.add('scrolled');
+                header.classList.add('escrol');
+                headerH1.classList.add('scroll-color');
             } else {
-                header.classList.remove('scrolled');
+                header.classList.remove('escrol');
+                headerH1.classList.remove('scroll-color');
             }
         };
     </script>
@@ -44,7 +47,7 @@
 
 <body>
     <div class="encabezado">
-        <header>
+        <header class="encabezado__header">
             <h1 class="header__h1">GrandTech!</h1>
             <div class="logo">
                 <img src="img/Frame 1.png" alt="Descripción del logo">
@@ -58,98 +61,102 @@
             </nav>
         </header>
         <div class="descripcion">
-            <h2 class="descripcion__h2">Convertimos abuelos<br>En expertos digitales</h2>
-            <p class="descripcion__p">¡Bienvenidos a GrandTech, tu aliado digital para una vida más sencilla y conectada.
-                <br>Como el nieto digital que siempre quisiste, te convertiremos en un experto digital en cuestión de semanas.
-                <br>Aprende a dominar tu smartphone, navegar por la web, gestionar tu correo electrónico, tomar fotos y mucho más, con la ayuda de nuestros amigables expertos.
-                <br>Simplifica tu vida y disfruta al máximo de la tecnología. Únete a GrandTech y descubre un mundo de posibilidades digitales. ¡Regístrate hoy y abraza el futuro con confianza!
-            </p>
+            <div descripcion__div>
+                <h2 class="descripcion__div--h2">Convertimos abuelos<br><span class="mark">En expertos digitales</span></h2>
+                <ul class="descripcion__div--ul">
+                    <li class="descripcion__li">¡Bienvenidos a GrandTech, tu aliado digital.</li>
+                    <li class="descripcion__li ">Como el nieto digital que siempre quisiste, te convertiremos en un experto digital en cuestión de semanas.</li>
+                    <li class="descripcion__li ">Aprende a dominar tu smartphone, navegar por la web, gestionar tu correo electrónico, tomar fotos y mucho más, con la ayuda de nuestros amigables expertos.</li>
+                    <li class="descripcion__li ">Simplifica tu vida y disfruta al máximo de la tecnología. Únete a GrandTech y descubre un mundo de posibilidades digitales. ¡Regístrate hoy y abraza el futuro con confianza!</li>
+                </ul>
+            </div>
+            <img class="descripcion__img" src="./img/pexels-photo-3823489.jpeg" alt="Nieta ayudando a su abuelo frente a una laptop">
         </div>
     </div>
 
     <!-- Sección de tutoriales (comentada por ser contenido faltante) -->
-    <!--<div id="card1" class="card1">
+    <!--<div id="card1 " class="card1 ">
         <h2>Tutoriales Disponibles</h2>
         <ul>
-            <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
-            <li><a href="#">Navegación en la web</a></li>-->
+            <li><a href="tutorial1.html ">Cómo enviar un correo electrónico</a></li>
+            <li><a href="# ">Navegación en la web</a></li>-->
     <!-- Agrega más tutoriales aquí -->
     <!--</ul>
     </div>
 
     <!-- Sección de tutoriales (comentada por ser contenido faltante) -->
-    <!--<div id="card2" class="card1">
+    <!--<div id="card2 " class="card1 ">
         <h2>Tutoriales Disponibles</h2>
         <ul>
-            <li><a href="tutorial1.html">Cómo enviar un correo electrónico</a></li>
-            <li><a href="#">Navegación en la web</a></li>-->
+            <li><a href="tutorial1.html ">Cómo enviar un correo electrónico</a></li>
+            <li><a href="# ">Navegación en la web</a></li>-->
     <!-- Agrega más tutoriales aquí -->
     <!--</ul>
     </div>-->
 
     <!-- Sección de contenido principal -->
     <section>
-        <article class="card1">
+        <article class="card1 ">
             <h2>Clave de Seguridad Social</h2>
-            <video width="320" height="240" controls>
-                <source src="../Videos/TUTORIAL_ Clave de la Seguridad Social.mp4" type="video/mp4">
+            <video width="320 " height="240 " controls>
+                <source src="../Videos/TUTORIAL_ Clave de la Seguridad Social.mp4 " type="video/mp4 ">
                 Tu navegador no soporta el elemento de video.
             </video>
         </article>
 
-        <article class="card1">
+        <article class="card1 ">
             <h2>¿Quiénes Somos?</h2>
         </article>
 
-        <article class="card1">
+        <article class="card1 ">
             <h2>Noticias</h2>
         </article>
 
-        <article class="card1">
+        <article class="card1 ">
             <h2>Aprender es un derecho y es posible.</h2>
         </article>
     </section>
 
     <!-- Formulario popup -->
-    <div class="overlay" id="overlay"></div>
-    <div class="popup" id="popup">
-        <button class="close-popup-button" onclick="closePopup()">X</button>
+    <div class="overlay " id="overlay "></div>
+    <div class="popup " id="popup ">
+        <button class="close-popup-button " onclick="closePopup() ">X</button>
         <h2>Formulario de Contacto</h2>
-        <form action="https://formspree.io/f/moqorwro" method="POST">
+        <form action="https://formspree.io/f/moqorwro " method="POST ">
             <label>
                 Nombre:
-                <input type="text" name="nombre" required>
+                <input type="text " name="nombre " required>
             </label>
             <label>
                 Mail:
-                <input type="email" name="email" required>
+                <input type="email " name="email " required>
             </label>
             <label>
                 Mensaje:
-                <textarea name="message" required></textarea>
+                <textarea name="message " required></textarea>
             </label>
-            <button class="button-enviar" type="submit">Enviar</button>
+            <button class="button-enviar " type="submit ">Enviar</button>
         </form>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div class="buscador">
-            <form action="/buscar" method="get">
-                <input type="text" name="q" placeholder="Buscar...">
-                <button type="submit">Buscar</button>
+        <div class="buscador ">
+            <form action="/buscar " method="get ">
+                <input type="text " name="q " placeholder="Buscar... ">
+                <button type="submit ">Buscar</button>
             </form>
         </div>
-        <div class="contactos">
+        <div class="contactos ">
             <ul>
-                <li><a href="https://wa.me/TUNUMERO" target="_blank">WhatsApp</a></li>
-                <li><a href="mailto:tucorreo@gmail.com">Correo Electrónico</a></li>
+                <li><a href="https://wa.me/TUNUMERO " target="_blank ">WhatsApp</a></li>
+                <li><a href="mailto:tucorreo@gmail.com ">Correo Electrónico</a></li>
             </ul>
         </div>
-        <div class="redes-sociales">
+        <div class="redes-sociales ">
             <ul>
-                <li><a href="URL_de_Tu_Facebook" target="_blank">Facebook</a></li>
-                <li><a href="URL_de_Tu_Twitter" target="_blank">Twitter</a></li>
+                <li><a href="URL_de_Tu_Facebook " target="_blank ">Facebook</a></li>
+                <li><a href="URL_de_Tu_Twitter " target="_blank ">Twitter</a></li>
                 <!-- Agrega más redes sociales según sea necesario -->
             </ul>
         </div>
