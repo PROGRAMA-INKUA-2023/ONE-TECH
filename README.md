@@ -2,7 +2,7 @@
   
   ![programacion-web (1)](https://github.com/PROGRAMA-INKUA-2023/ONE-TECH/assets/110946400/bb0dc040-8faa-47c3-b8f8-089a0c517f12)
   
-  💻 Proyecto Tercera Edad 📚 Tutoriales de Tercera Edad. 
+  💻 Proyecto Tercera Edad 📚 Tutoriales de Tercera Edad. ⚖️Por una educación que nos incluya a todos/as. 
   
   # Descripción del proyecto 
   
@@ -22,23 +22,29 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 # Integrantes.
 
 # Manager: 
-  David Esteche. 
+ - David Esteche. 
 
 # Assistan Manager: 
-  Walter Diaz.
+ - Walter Diaz.
   
 # Membership: 
 
-Augusto Casado
+-Augusto Casado
 
-Marcelo Bounjon
+-Marcelo Bounjon
 
-Brian Ahumada
+-Brian Ahumada
 
-Matías Canevaro
+-Matías Canevaro
 
-Araceli Pintos 
+-Araceli Pintos 
 
-Fabricio Navarro 
+-Fabricio Navarro 
 
-Franco Blanco
+-Franco Blanco
+
+- Sofia Sottile
+  
+- Marita Campos
+
+- Ciro Martinez
