@@ -2,51 +2,56 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
+}
+
+header {
     background-color: #a7e952;
     color: #222020;
     text-align: center;
     padding: 20px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     font-size: 25px;
     text-align: center;
     list-style-type: none;
     background-color: #60a803;
     margin: 0;
     padding: 10px;
-  }
-  
-  nav li {
+}
+
+nav li {
     display: inline;
     margin: 10px;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 25px;
     color: #fff;
-  }
-  main {
+}
+
+main {
     margin: 20px;
     padding: 20px;
-  }
+}
 
-  .card1 {
+.card1 {
     cursor: pointer;
     float: left;
     text-align: center;
-    width: 200px; /* Ancho de cada carta */
-    height: 300px; /* Alto de cada carta */
-    margin: 10px; /* Margen entre las cartas */
+    width: 200px;
+    /* Ancho de cada carta */
+    height: 300px;
+    /* Alto de cada carta */
+    margin: 10px;
+    /* Margen entre las cartas */
     border-radius: 10px;
     border: 1px solid #ccc;
     background-color: #71d117;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra */
     transition: transform 0.3s;
     /*font-size: 20px;
     font-family: Arial, sans-serif;
@@ -58,19 +63,20 @@ body {
     margin: 0;
     padding-left: 5px;
     border-radius: 15px;*/
-  }
+}
 
-  ul:hover{
+ul:hover {
     transform: scale(1.05);
-  }
-button :hover{
-  cursor: pointer;
+}
+
+button :hover {
+    cursor: pointer;
     font-family: Arial, sans-serif;
-   
 }
 
 .entrar {
-  background-color: #a8eb51; /* Cambia el color del botón */
+    background-color: #a8eb51;
+    /* Cambia el color del botón */
     color: #fff;
     border: none;
     border-radius: 25px;
@@ -79,80 +85,93 @@ button :hover{
 }
 
 .logo {
-  margin-right: 20px; /* Espacio entre el logo y el título */
-  
+    margin-right: 20px;
+    /* Espacio entre el logo y el título */
 }
 
 .logo img {
-  transition: transform 0.3s;; /* Duración de la transición y propiedad a animar */
+    transition: transform 0.3s;
+    ;
+    /* Duración de la transición y propiedad a animar */
 }
 
 .logo img:hover {
-  transform: scale(1.2); /* Opacidad reducida */
+    transform: scale(1.2);
+    /* Opacidad reducida */
 }
 
 h1 {
-  font-size: 24px; /* Tamaño del título */
+    font-size: 24px;
+    /* Tamaño del título */
 }
 
-
 footer {
-  background-color: #a7e952;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+    background-color: #a7e952;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 .contactos ul,
 .redes-sociales ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .contactos ul li,
 .redes-sociales ul li {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 .buscador {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
+
 /* Estilos para los enlaces en el footer */
+
 footer a {
-  color: #0c0c0c;
-  text-decoration: none;
+    color: #0c0c0c;
+    text-decoration: none;
 }
 
 footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
+
 /* Estilos para el buscador */
+
 .buscador {
-  margin-top: 20px;
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .buscador input[type="text"] {
-  padding: 10px;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 200px; /* Ajusta el ancho según tus necesidades */
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    /* Ajusta el ancho según tus necesidades */
 }
 
 .buscador button {
-  background-color: #60a803; /* Cambia el color del botón */
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
-  margin-left: -50px; /* Mueve el botón a la izquierda para superponerlo al campo de entrada */
-  cursor: pointer;
+    background-color: #60a803;
+    /* Cambia el color del botón */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: -50px;
+    /* Mueve el botón a la izquierda para superponerlo al campo de entrada */
+    cursor: pointer;
 }
+
 
 /* Estilos para el botón al pasar el mouse */
-.buscador button:hover {
-  background-color: #79d13f; /* Cambia el color al pasar el mouse */
-}
 
+.buscador button:hover {
+    background-color: #79d13f;
+    /* Cambia el color al pasar el mouse */
+}
