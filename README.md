@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Bienvenidos a ONE-TECH- Inkua
 
 ![programacion-web (1)](https://github.com/PROGRAMA-INKUA-2023/ONE-TECH/assets/110946400/bb0dc040-8faa-47c3-b8f8-089a0c517f12)
@@ -6,6 +7,14 @@
 
 # Descripción del proyecto
 
+  # Bienvenidos a ONE-TECH- Inkua
+  
+  ![programacion-web (1)](https://github.com/PROGRAMA-INKUA-2023/ONE-TECH/assets/110946400/bb0dc040-8faa-47c3-b8f8-089a0c517f12)
+  
+  💻 Proyecto Tercera Edad 📚 Tutoriales de Tercera Edad. ⚖️Educación es sinónimo de igualdad.  
+  
+  # Descripción del proyecto 
+  
 # Proyecto de Tutoriales para Personas de la Tercera Edad
 
 Este es un proyecto de una página web sin fines de lucro diseñada para proporcionar tutoriales y recursos a personas de la tercera edad y cualquier otra persona que necesite ayuda. El objetivo principal de este proyecto es brindar apoyo a personas de habla hispana y mejorar su calidad de vida al proporcionar información y guías útiles.
