@@ -119,6 +119,7 @@
         font-size: 50px;
         color: white;
         padding: 25px;
+        margin-top: 40px;
     }
     
     .mark {
@@ -144,6 +145,7 @@
         position: static;
         display: inline-block;
         padding: 30px;
+        border-radius: 70px;
     }
     
     .card1 {
