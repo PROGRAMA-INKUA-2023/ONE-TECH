@@ -113,7 +113,9 @@
         position: relative;
     }
     
-  
+    .descripcion__div{
+        position: relative;
+    }
     
     .descripcion__div--h2 {
         display: block;
