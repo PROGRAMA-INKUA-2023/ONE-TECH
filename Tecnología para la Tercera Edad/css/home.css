@@ -352,11 +352,18 @@
     .redes-sociales ul {
         list-style: none;
         padding: 0;
+        margin: 0;
     }
     
     .contactos ul li,
     .redes-sociales ul li {
-        margin: 5px 0;
+        margin: 5px 0px;
+        text-align: left;
+    }
+    
+    .contactos-redes {
+        display: inline-block;
+        margin: 15px;
     }
     
     .buscador {
@@ -623,4 +630,10 @@
     .buscador button:hover {
         background-color: #79d13f;
         /* Cambia el color al pasar el mouse */
+    }
+    
+    i {
+        display: inline-block;
+        margin: 0px 5px 0px 5px;
+        font-size: 1.3em;
     }
