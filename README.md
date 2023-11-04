@@ -45,6 +45,6 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 
 - Sofia Sottile
   
-- Marita Campos
+- Margarita Campos
 
 - Ciro Martinez
