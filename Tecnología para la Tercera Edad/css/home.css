@@ -113,7 +113,9 @@
         position: relative;
     }
     
-    .descripcion__div {}
+    .descripcion__div {
+        position: relative;
+    }
     
     .descripcion__div--h2 {
         display: block;
@@ -141,17 +143,18 @@
     }
     
     .descripcion__li {
-        margin-bottom: 15px;
+        margin-bottom: 1px;
         padding: 0px 25px 0px 25px;
+        text-align: justify;
+        list-style: disclosure-closed;
     }
     
     .descripcion__img {
         width: 50%;
         align-self: center;
-        position: static;
+        position: relative;
         display: inline-block;
         padding: 30px;
-        border-radius: 70px;
     }
     
     main {
