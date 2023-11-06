@@ -2,7 +2,11 @@
   
   ![programacion-web (1)](https://github.com/PROGRAMA-INKUA-2023/ONE-TECH/assets/110946400/bb0dc040-8faa-47c3-b8f8-089a0c517f12) 
   
-  💻 Proyecto Tercera Edad 📚 Tutoriales de Tercera Edad. ⚖️Educación es sinónimo de igualdad.  
+  💻 Proyecto Tercera Edad 
+  
+  📚 Tutoriales de Tercera Edad
+  
+  ⚖️Educación es sinónimo de igualdad 
   
   # 📑 Descripción del proyecto 📑
   
