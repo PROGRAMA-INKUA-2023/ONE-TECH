@@ -26,10 +26,10 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 # ⚙️ Integrantes ⚙️.
 
 # Manager: 
- - David Esteche. 
+ - David Esteche
 
 # Assistan Manager: 
- - Walter Diaz.
+ - Walter Diaz
   
 # ✈️ Membership ✈️ 
 
