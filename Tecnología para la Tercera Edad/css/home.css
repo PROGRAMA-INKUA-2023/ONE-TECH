@@ -226,7 +226,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             /*background-color: #60a803;*/
-            background: linear-gradient(#60a803, #8de933);
+            background-image: linear-gradient(315deg, #41d2d5, #1370fd 70%);
+            /*background: linear-gradient(#60a803, #8de933);*/
             padding: 20px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             z-index: 2;
@@ -246,7 +247,7 @@
     
     .open-popup-button {
         cursor: pointer;
-        background-color: #B03A2E;
+        background-color: rgb(141, 176, 46);
         color: white;
         border: none;
         padding: 10px 20px;
@@ -262,14 +263,14 @@
     }
     
     .open-popup-button:hover {
-        background-color: #641E16;
+        background-color: #1370fd;
         /* Cambio de color al pasar el mouse por encima */
     }
     /* Estilos para el botón de cierre del popup */
     
     .close-popup-button {
         cursor: pointer;
-        background-color: #e74c3c;
+        background-color: #fece26;
         /* Rojo */
         color: white;
         border: none;
@@ -305,7 +306,7 @@
     
     .button-enviar {
         cursor: pointer;
-        background-color: #B03A2E;
+        background-color: #fece26;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -320,7 +321,7 @@
     }
     
     .button-enviar:hover {
-        background-color: #641E16;
+        background-color: #1370fd ;
         /* Cambio de color al pasar el mouse por encima */
     }
     /*<!-- ---- FIN - Estilo para formulario PopUp ---- -->*/
@@ -344,7 +345,7 @@
     /* Estilos para el footer */
     
     footer {
-        background-color: #a7e952;
+        background-image: linear-gradient(315deg, #41d2d5, #1370fd 70%);
         color: #fff;
         padding: 20px;
         text-align: center;
@@ -406,7 +407,7 @@
                 /*transform: translate(-50%, -50%);*/
                 width: 90%;
                 height: 90%;
-                background-color: #60a803;
+                background-color: #84a756;
                 padding: 20px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
                 z-index: 2;
@@ -443,7 +444,8 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 /*background-color: #60a803;*/
-                background: linear-gradient(#60a803, #8de933);
+                background-image: linear-gradient(315deg, #41d2d5, #1370fd 70%);
+                /*background: linear-gradient(#60a803, #8de933);*/
                 padding: 20px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
                 z-index: 2;
@@ -550,7 +552,7 @@
         }
         /* Estilos para el footer */
         footer {
-            background-color: #a7e952;
+            background-color: ;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -610,7 +612,7 @@
     }
     
     .buscador button {
-        background-color: #60a803;
+        background-color: #41d2d5;
         /* Cambia el color del botón */
         color: #fff;
         border: none;
@@ -623,6 +625,6 @@
     /* Estilos para el botón al pasar el mouse */
     
     .buscador button:hover {
-        background-color: #79d13f;
+        background-color: #1370fd;
         /* Cambia el color al pasar el mouse */
     }
