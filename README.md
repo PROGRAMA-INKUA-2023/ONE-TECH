@@ -29,7 +29,7 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
  - David Esteche
 
 # Assistan Manager: 
- - Walter Diaz
+- Araceli Pintos 
   
 # ✈️ Membership ✈️ 
 
@@ -40,12 +40,6 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 - Brian Ahumada
 
 - Matías Canevaro
-
-- Araceli Pintos 
-
-- Fabricio Navarro 
-
-- Franco Blanco
 
 - Sofia Sottile
   
