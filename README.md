@@ -3,6 +3,8 @@
   ![programacion-web (1)](https://github.com/PROGRAMA-INKUA-2023/ONE-TECH/assets/110946400/bb0dc040-8faa-47c3-b8f8-089a0c517f12) 
   
   💻 Proyecto Tercera Edad 
+
+  https://poetic-mooncake-e85291.netlify.app/
   
   📚 Tutoriales de Tercera Edad
   
@@ -35,7 +37,7 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 
 - Augusto Casado
 
-- Marcelo Boujón
+- Marcelo Alejandro Boujón
 
 - Brian Ahumada
 
