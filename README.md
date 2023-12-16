@@ -23,6 +23,10 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 
 - Fomentar la inclusión digital y promover la independencia de las personas mayores al permitirles aprender y utilizar herramientas tecnológicas de manera efectiva.
 
+# ⚙️ Servidor de la Página Web ⚙️.
+
+:heavy_check_mark: [https://grantech-onetech.netlify.app/](https://grantech-onetech.netlify.app/)
+
 # ⚙️ Integrantes ⚙️.
 
 # Manager: 
@@ -35,7 +39,7 @@ Este es un proyecto de una página web sin fines de lucro diseñada para proporc
 
 - Augusto Casado
 
-- Marcelo Boujón
+- Marcelo Alejandro Boujón
 
 - Brian Ahumada
 
